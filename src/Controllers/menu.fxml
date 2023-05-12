@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuController">
+   <left>
+      <AnchorPane fx:id="SidebarPane" style="-fx-background-color: grey; -fx-border-color: White;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="CashierButton" alignment="TOP_LEFT" layoutY="135.0" mnemonicParsing="false" onAction="#clickCashierButton" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: indigo; -fx-background-radius: 50;" text="Cashier" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font></Button>
+            <Button fx:id="EmployeeButton" alignment="TOP_LEFT" layoutY="240.0" mnemonicParsing="false" onAction="#clickEmployeeButton" prefHeight="39.0" prefWidth="198.0" style="-fx-background-color: indigo; -fx-background-radius: 50;" text="Employees" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font></Button>
+            <Button fx:id="StoreButton" alignment="TOP_LEFT" layoutY="345.0" mnemonicParsing="false" onAction="#clickStoreButton" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: indigo; -fx-background-radius: 50;" text="Store" textFill="WHITE">
+               <font>
+                  <Font size="31.0" />
+               </font></Button>
+            <Button fx:id="SalesButton" alignment="TOP_LEFT" layoutY="30.0" mnemonicParsing="false" onAction="#clickSalesButton" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: indigo; -fx-background-radius: 50;" text="Sales" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="ExitButton" alignment="TOP_LEFT" layoutX="-1.0" layoutY="446.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: indigo; -fx-background-radius: 50;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="750.0" style="-fx-background-color: grey; -fx-border-color: White;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="DashboardImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: White;">
+               <image>
+                  <Image url="@../img/menu.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="359.0" layoutY="2.0" prefHeight="54.0" prefWidth="188.0" style="-fx-background-color: Black; -fx-border-color: Black;" text="Admin" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="746.0" prefWidth="803.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

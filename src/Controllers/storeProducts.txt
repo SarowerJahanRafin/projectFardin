@@ -1,0 +1,7 @@
+lux 2 324 345
+rafin 3 435 5345
+fardin 35 546 645
+lux_soap 456 10 60
+wheel_powder 78 1000 100
+rafin5 10 6 66
+jamal_saban 7 50 100
